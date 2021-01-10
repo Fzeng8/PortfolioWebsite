@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Faith Zeng</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h3><a href="index.html">Faith Zeng</a></h3>
+
+        <ul class="navOptions">
+            <li><a href="index.html">works</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </nav>
+
+    <section class="projectAll">
+        <div class="projectHeader">
+            <h1>Plant Boye</h1>
+            <h2>Physical computing, Arduino</h2>
+        </div>
+
+        <div class="projectFinal backgroudCyan">
+            <iframe src="https://www.youtube.com/embed/EHM_gi2FCvc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="projectDetails">
+            <div class="projectOneLiner">
+                <p>Plant Boye is an interactive project that allows you to experience the satisfactions of growing your own plant friend without the real responsibilies or risks.</p>
+            </div>
+
+            <div class="projectImageAll">
+                <div class="projectImage backgroudCyan">
+                    <iframe src="https://www.youtube.com/embed/xZi-45dUlVA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="projectIframeHorizontal"></iframe>
+                    <img src="PlantBoye/Brainstorming.jpg" alt="Brainstorming notes on paper written in pencil" class="projectImageVertical">
+                </div>
+                <p class="imageCaption">EARLY ITERATION OF THE PROJECT & BRAINSTORMING</p>
+            </div>
+
+            <div class="projectTitleText">
+                <h4>About the Project</h4>
+                <p>This physical and digital interactive experience was inspired by my inability to keep real plants alive. By using an <strong>Arduino</strong> and different sensors, users are able to go through the physical motions of caring for a plant, allowing the digital plant to fully grow without any accidents or loss. The Adruino is coded in <strong>C++</strong> while the  virtual experience is coded in <strong>p5.js</strong> and designed with <strong>Photoshop</strong>.</p>
+            </div>
+
+            <div class="projectImageAll">
+                <div class="projectImage backgroudCyan">
+                    <img src="PlantBoye/PlantBoye.gif" alt="Brainstorming notes on paper written in pencil" class="projectImageVertical">
+                </div>
+                <p class="imageCaption">DIGITAL EXPERIENCE OVERVIEW</p>
+            </div>
+
+            <div class="projectTitleText">
+                <h4>Digital Challenges</h4>
+                <p>Before this project, I was only using one Arduino sensor per project, but Plant Boye required four different sensors. I initially started by coding each sesnor's interaction in different p5.js sketches, but then I had to figure out how to combine everything into one big project and how to switch to the next interaction.<br><br>
+                I used <strong>p5.serialcontrol</strong> so my p5.js sketches could read the Arduino sensor data. Again, I had to figure out how the data would be different with multiple sensors instead of just one.</p>
+            </div>
+
+            <div class="projectImageAll">
+                <div class="projectImage backgroudCyan">
+                    <img src="PlantBoye/ArduinoSensors.jpg" alt="The four different Arduino sensors used: potentiometer, force resistor sensor, water level sensor, photocell" class="projectImageHorizontal">
+                    <img src="PlantBoye/FabricationsPlan2.jpg" alt="Brainstorming of how each pot of plant holds each Arduino sensor" class="projectImageVertical">
+                </div>
+                <p class="imageCaption">FOUR DIFFERENT ARDUINO SENSORS & DIGITAL INTERFACE BRAINSTORMING</p>
+            </div>
+
+            <div class="projectTitleText">
+                <h4>Arduino Sensors</h4>
+                <p><span class="bold">The four different Arduino sensors I used are the potentiometer, force resistor sensor, water level sensor, and photocell.</span> First, the potentiometer will be used to pick between five different plants by rotating between the options. Then, the other sensors will allow you to go through the motions of planting without the physical mess. By squeezing the force sensor between your fingers, you will help pat down the soil on screen. Next, you pour water into the cup with a water level sensor which will water the virtual plant. Finally, the photocell reads the amount “sunlight” around it which would impact the size of the digital plant and number of clouds seen through the window.</p>
+            </div>
+
+            <div class="projectImageAll">
+                <div class="projectImage backgroudCyan">
+                    <img src="PlantBoye/PlantBoyeSetup.jpg" alt="Set up of the entire Plant Boye project" class="projectImageHorizontal">
+                    <img src="PlantBoye/FabricationsPlan1.jpg" alt="Brainstorming of the Plant Boye set up" class="projectImageHorizontal">
+                </div>
+                <p class="imageCaption">PLANT BOYE SET UP & SET UP BRAINSTORMING</p>
+            </div>
+
+            <div class="projectTitleText">
+                <h4>Physical Interface</h4>
+                <p>For the physical interface, I wanted to find a way to hide the wiring and keep it to the plant theme. After soldering all the sensors to the Arduino, I hid the wires and Arduino inside a shoebox with a hole in the back that connected the Arduino to my laptop. There were also four holes on the top for the sensors which were placed inside small plant pots on top of the shoebox. Surrounding the sensors was brown airdry clay to act as dirt which was topped with fake grass.</p>
+            </div>
+
+            <div class="projectImageAll">
+                <div class="projectImage backgroudCyan">
+                   <img src="PlantBoye/WinterShow.jpeg" alt="Group picture after the first IMA show at NYU's New York Campus" class="projectImageHorizontal">
+                </div>
+                <p class="imageCaption">GROUP PICTURE AFTER THE FIRST IMA WINTER SHOW AT NYU'S NEW YORK CAMPUS</p>
+            </div>
+            
+            <div class="projectLinkText lastDetail">
+                <a href="https://itp.nyu.edu/shows/winter2018/" target="_blank">This project was shown in the ITP/IMA Winter Show 2018</a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer>
+        <h5>Copyright Faith Zeng 2021</h5>
+
+        <ul class="footerOptions">
+            <li><a href="zengfaith@gmail.com" target="_blank">zengfaith@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/byfaithzeng/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com/channel/UCr4fZLjE5jN-VKA_orJxL0w" target="_blank">YouTube</a></li>
+            <li><a href="https://www.linkedin.com/in/faith-zeng-2b7119197/" target="_blank">LinkedIn</a></li>
+
+        </ul>
+
+    </footer>
+
+
+</body>
+
+</html>
