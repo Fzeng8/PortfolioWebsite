@@ -1,0 +1,619 @@
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding: 90px;
+}
+
+body {
+    background-image: url("Background.png");
+    background-attachment: fixed;
+    font-family: 'PT Sans', sans-serif;
+    color: #23233d;
+    margin: 0px;
+}
+
+a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: 700;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    /*    text-decoration: underline;*/
+    color: #dd003e;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.homeNav {
+    /*        opacity: 0;*/
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #f4f4f4;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    background-image: url("Background.png");
+    background-attachment: fixed;
+    z-index: 2;
+    /*    display: none;*/
+}
+
+nav > h3 {
+    font-size: 35px;
+    letter-spacing: 1.5px;
+}
+
+.navOptions {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    height: 20px;
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.navOptions > li {
+    margin-left: 30px;
+}
+
+.navOptions > li > a {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #f4f4f4;
+}
+
+footer > h5 {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.footerOptions {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-end;
+    /*    width: 200px;*/
+    height: 20px;
+}
+
+.footerOptions > li > a {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footerOptions > li {
+    margin-left: 30px;
+}
+
+/*toggle classes*/
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.fadein {
+    opacity: 0;
+}
+
+/*home page*/
+.homeIntro {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    left: 40px;
+    width: 1100px;
+    height: 550px;
+    /*    height: 2000px;*/
+    color: #f4f4f4;
+    font-size: 35px;
+    /*    opacity: 1;*/
+}
+
+.homeIntro > p {
+    position: relative;
+    top: 30px;
+    line-height: 65px;
+}
+
+.homeArrows {
+    width: 45px;
+    position: relative;
+    top: 30px;
+}
+
+#works {
+    scroll-snap-align: start;
+}
+
+.homeWorks {
+    background-color: rgba(244, 244, 244, 0.9);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.works {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 100px 50px 50px 50px;
+    height: 100%;
+}
+
+.works > div {
+    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.works > div > a {
+    font-family: 'PT Sans', sans-serif;
+    color: #23233d;
+}
+
+.works > div > a:hover {
+    text-decoration: none;
+    color: #dd003e;
+}
+
+.filter {
+    height: 321px;
+    width: 450px;
+}
+
+.noFilter {
+    height: 321px;
+    width: 450px;
+    z-index: -1;
+}
+
+.works > div > a > h2 {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+}
+
+.works > div > a > h6 {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+/*about*/
+.aboutHeaderLink > a {
+    color: #23233d;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.aaboutHeaderLink > a:hover {
+    color: #dd003e;
+    font-size: 20px;
+}
+
+.content {
+    grid-area: main;
+}
+
+.aboutTop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "main .";
+    grid-template-columns: 475px 575px;
+    column-gap: 50px;
+}
+
+.aboutTop > p {
+    position: relative;
+    left: 90px;
+}
+
+.aboutTop > p > a {
+    color: #23233d;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.aboutTop > p > a:hover {
+    color: #dd003e;
+    font-size: 22px;
+}
+
+.aboutImage {
+    height: 450px;
+    filter: drop-shadow(5px 5px 10px #383838);
+}
+
+.aboutBottom {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 475px 575px;
+    grid-template-areas: "hd main";
+    column-gap: 50px;
+}
+
+.aboutBottom > p > a {
+    color: #23233d;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.aboutBottom > p > a:hover {
+    color: #dd003e;
+    font-size: 22px;
+}
+
+/*project pages*/
+.projectAll {
+    font-size: 20px;
+    background-color: rgba(244, 244, 244, 0.9);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectHeader {
+    height: 105px;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.projectHeader > h1 {
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.projectHeader > h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.backgroudCoral {
+    background-color: #ff6d74;
+}
+
+.backgroudCyan {
+    background-color: #9ffcf6;
+}
+
+.backgroudBlue {
+    background-color: #25e8d1;
+}
+
+.backgroudRed {
+    background-color: #dd003e;
+}
+
+.projectFinal {
+    /*    margin-top: 10px;*/
+    height: 550px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectFinal > iframe {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    width: 800px;
+    height: 500px;
+}
+
+.projectFinal > img {
+    height: 500px;
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+}
+
+.projectDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oneLiner {
+    grid-area: ol;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.projectOneLiner {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "ol .";
+    grid-template-columns: 575px 575px;
+    column-gap: 50px;
+    /*    background-color: blue;*/
+}
+
+.projectOneLiner > p {
+    line-height: 30px;
+    position: relative;
+    left: 90px;
+    width: 500px;
+    font-style: italic;
+}
+
+.projectImage {
+    margin-top: 50px;
+    height: 550px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectImageVertical {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    height: 500px;
+}
+
+.projectImageHorizontal {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    width: 450px;
+}
+
+.projectIframeHorizontal {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    width: 490px;
+    height: 300px;
+}
+
+.projectIframeSingle {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    width: 800px;
+    height: 475px;
+}
+
+
+.imageCaption {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 13px;
+}
+
+.projectTitleText {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "hd main";
+    grid-template-columns: 475px 575px;
+    column-gap: 50px;
+}
+
+.projectTitleText > h4 {
+    position: relative;
+    top: -10px;
+    left: 90px;
+    width: 400px;
+    font-family: 'Viaoda Libre', cursive;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.projectTitleText > p > a {
+    color: #23233d;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.projectTitleText > p > a:hover {
+    color: #dd003e;
+    font-size: 22px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.projectLinkText {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "hd .";
+    grid-template-columns: 475px 575px;
+    column-gap: 50px;
+}
+
+.projectLinkText > a {
+    position: relative;
+    top: -10px;
+    left: 90px;
+    width: 400px;
+    font-family: 'Viaoda Libre', cursive;
+    font-style: italic;
+    color: #23233d;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.projectLinkText > a:hover {
+    color: #dd003e;
+}
+
+.lastDetail {
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 2000px) {
+    .homeIntro {
+        width: 1400px;
+        height: 480px;
+    }
+
+    .filter {
+        height: 500px;
+        width: 700px;
+    }
+
+    .noFilter {
+        height: 500px;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /*home page*/
+    .homeIntro {
+        width: 850px;
+        height: 600px;
+    }
+
+    /*about*/
+    .aboutTop {
+        grid-template-columns: 425px 425px;
+    }
+
+    .aboutTop > p {
+        left: 90px;
+    }
+
+    .aboutImage {
+        height: 400px;
+    }
+
+    .aboutBottom {
+        grid-template-columns: 425px 425px;
+    }
+
+    /*project*/
+    .projectFinal {
+        height: 450px;
+        width: 900px;
+    }
+
+    .projectFinal > iframe {
+        width: 700px;
+        height: 400px;
+    }
+
+    .projectFinal > img {
+        height: 400px;
+    }
+
+    .projectOneLiner {
+        grid-template-columns: 425px 425px;
+    }
+
+    .projectOneLiner > p {
+        left: 50px;
+        width: 380px;
+    }
+
+    .projectImage {
+        height: 450px;
+        width: 900px;
+    }
+
+    .projectImageVertical {
+        height: 400px;
+    }
+
+    .projectImageHorizontal {
+        width: 400px;
+    }
+
+    .projectIframeHorizontal {
+        width: 420px;
+        height: 300px;
+    }
+
+    .projectIframeSingle {
+        width: 800px;
+        height: 475px;
+    }
+
+    .projectTitleText {
+        grid-template-columns: 425px 425px;
+    }
+
+    .projectTitleText > h4 {
+        left: 50px;
+        width: 380px;
+    }
+
+    .projectLinkText {
+        grid-template-columns: 425px 425px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1059px) {
+    .filter {
+        height: 280px;
+        width: 392px;
+    }
+
+    .noFilter {
+        height: 280px;
+        width: 392px;
+    }
+
+    .works > div > a > h2 {
+        width: 280px;
+
+    }
+
+    .works > div > a > h6 {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 943px) {}
+
+@media screen and (max-width: 768px) {}
