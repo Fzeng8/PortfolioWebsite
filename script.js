@@ -28,24 +28,40 @@ const app = {
         //        });
 
         window.addEventListener("scroll", function () {
+            console.log(this.pageYOffset)
             if ($(".homeIntro").css("height") == "550px") {
                 if (this.pageYOffset >= 495) {
                     $('.homeNav').removeClass('hide');
-                    console.log("page offset")
                 } else {
                     $('.homeNav').addClass('hide');
                 }
             } else if ($(".homeIntro").css("height") == "480px") {
                 if (this.pageYOffset >= 425) {
                     $('.homeNav').removeClass('hide');
-                    console.log("page offset")
                 } else {
                     $('.homeNav').addClass('hide');
                 }
             } else if ($(".homeIntro").css("height") == "600px") {
                 if (this.pageYOffset >= 545) {
                     $('.homeNav').removeClass('hide');
-                    console.log("page offset")
+                } else {
+                    $('.homeNav').addClass('hide');
+                }
+            } else if ($(".homeIntro").css("height") == "530px") {
+                if (this.pageYOffset >= 470) {
+                    $('.homeNav').removeClass('hide');
+                } else {
+                    $('.homeNav').addClass('hide');
+                }
+            } else if ($(".homeIntro").css("height") == "490px") {
+                if (this.pageYOffset >= 425) {
+                    $('.homeNav').removeClass('hide');
+                } else {
+                    $('.homeNav').addClass('hide');
+                }
+            } else if ($(".homeIntro").css("height") == "540px") {
+                if (this.pageYOffset >= 400) {
+                    $('.homeNav').removeClass('hide');
                 } else {
                     $('.homeNav').addClass('hide');
                 }
