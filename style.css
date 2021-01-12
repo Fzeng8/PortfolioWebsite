@@ -24,7 +24,6 @@ a:visited {
 }
 
 a:hover {
-    /*    text-decoration: underline;*/
     color: #dd003e;
 }
 
@@ -32,17 +31,13 @@ a:active {
     text-decoration: underline;
 }
 
-.homeNav {
-    /*        opacity: 0;*/
-}
-
 nav {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     height: 90px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     color: #f4f4f4;
     position: fixed;
     right: 0px;
@@ -59,6 +54,7 @@ nav > h3 {
     letter-spacing: 1.5px;
     margin-top: 20px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 .navOptions {
@@ -69,7 +65,7 @@ nav > h3 {
     width: 200px;
     height: 20px;
     float: right;
-    margin-right: 10px;
+    padding-right: 10px;
     font-size: 20px;
 }
 
@@ -79,7 +75,6 @@ nav > h3 {
 
 .navOptions > li > a {
     font-family: 'PT Sans', sans-serif;
-    font-weight: 400;
 }
 
 footer {
@@ -108,7 +103,6 @@ footer > h5 {
 
 .footerOptions > li > a {
     font-family: 'PT Sans', sans-serif;
-    font-weight: 400;
     font-size: 18px;
 }
 
@@ -183,6 +177,7 @@ footer > h5 {
 .works > div > a {
     font-family: 'PT Sans', sans-serif;
     color: #23233d;
+    
 }
 
 .works > div > a:hover {
@@ -327,7 +322,6 @@ footer > h5 {
 }
 
 .projectFinal {
-    /*    margin-top: 10px;*/
     height: 550px;
     width: 1100px;
     display: flex;
@@ -369,7 +363,6 @@ footer > h5 {
     grid-template-areas: "ol .";
     grid-template-columns: 575px 575px;
     column-gap: 50px;
-    /*    background-color: blue;*/
 }
 
 .projectOneLiner > p {
@@ -864,6 +857,14 @@ footer > h5 {
         width: calc(100% - 50px);
     }
 
+    .aboutImageAll {
+        width: calc(100% - 10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .aboutImage {
         height: 345px;
     }
@@ -1135,6 +1136,11 @@ footer > h5 {
 }
 
 @media screen and (max-width: 425px) {
+    nav > h3 {
+        font-size: 35px;
+        width: 200px;
+    }
+
     footer {
         flex-direction: column;
         justify-content: center;
@@ -1313,6 +1319,16 @@ footer > h5 {
         scroll-padding: 80px;
     }
 
+    nav > h3 {
+        font-size: 32px;
+        width: 240px;
+    }
+
+    .navOptions > li {
+        margin-left: 18px;
+        font-size: 19px;
+    }
+
     /*home page*/
     .homeIntro {
         font-size: 23px;
@@ -1435,12 +1451,10 @@ footer > h5 {
 
     nav > h3 {
         font-size: 28px;
-        margin-top: 20px;
         width: 200px;
     }
 
     .navOptions > li {
-        margin-left: 18px;
         font-size: 18px;
     }
 
@@ -1484,7 +1498,7 @@ footer > h5 {
     .projectAll {
         margin-top: 70px;
     }
-    
+
     .projectFinal > iframe {
         width: 253px;
         height: 200px;
