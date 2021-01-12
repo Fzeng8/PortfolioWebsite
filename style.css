@@ -177,7 +177,7 @@ footer > h5 {
 .works > div > a {
     font-family: 'PT Sans', sans-serif;
     color: #23233d;
-    
+
 }
 
 .works > div > a:hover {
@@ -437,7 +437,7 @@ footer > h5 {
     margin-top: 3px;
     margin-bottom: 0px;
     font-size: 13px;
-    width: 100%;
+    width: 1100px;
 }
 
 .projectTitleText {
@@ -610,6 +610,10 @@ footer > h5 {
         height: 400px;
     }
 
+    .imageCaption {
+        width: 900px;
+    }
+
     .projectTitleText {
         grid-template-columns: 425px 425px;
     }
@@ -754,6 +758,10 @@ footer > h5 {
 
     .cherryCards {
         height: 320px;
+    }
+    
+    .imageCaption {
+        width: 730px;
     }
 
     .projectTitleText {
@@ -1421,11 +1429,7 @@ footer > h5 {
         margin-left: 0px;
         margin-right: 0px;
     }
-
-    .imageCaption {
-        width: 260px;
-    }
-
+    
     .projectTitleText {
         position: relative;
         left: -20px;
@@ -1531,11 +1535,11 @@ footer > h5 {
     }
 
     .aloneScreens {
-        height: 240px;
+        height: 230px;
     }
 
     .cherryCards {
-        height: 210px;
+        height: 200px;
     }
 
     .projectTitleText > h4 {
