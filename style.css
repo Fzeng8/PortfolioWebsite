@@ -421,6 +421,18 @@ footer > h5 {
     height: 475px;
 }
 
+.aloneScreens {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    height: 450px;
+}
+
+.cherryCards {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    height: 500px;
+}
+
 
 .imageCaption {
     margin-top: 3px;
@@ -590,6 +602,14 @@ footer > h5 {
         height: 475px;
     }
 
+    .aloneScreens {
+        height: 400px;
+    }
+
+    .cherryCards {
+        height: 400px;
+    }
+
     .projectTitleText {
         grid-template-columns: 425px 425px;
     }
@@ -728,6 +748,14 @@ footer > h5 {
         height: 200px;
     }
 
+    .aloneScreens {
+        height: 300px;
+    }
+
+    .cherryCards {
+        height: 320px;
+    }
+
     .projectTitleText {
         grid-template-columns: 340px 340px;
     }
@@ -819,6 +847,11 @@ footer > h5 {
     }
 
     /*about*/
+    .aboutHeaderLink {
+        margin-bottom: 40px;
+    }
+
+
     .aboutTop {
         display: inline;
     }
@@ -913,9 +946,14 @@ footer > h5 {
         flex-wrap: wrap;
     }
 
-    .projectImageSideMargins {
-        margin-left: 10px;
-        margin-right: 10px;
+    .aloneScreens {
+        height: 260px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cherryCards {
+        height: 260px;
     }
 
     .imageCaption {
@@ -1010,6 +1048,15 @@ footer > h5 {
     }
 
     /*about*/
+    .aboutHeaderLink {
+        margin-bottom: 40px;
+    }
+    
+    .aboutTop > p {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
     .aboutImage {
         height: auto;
         width: 360px;
@@ -1085,25 +1132,12 @@ footer > h5 {
         height: 200px;
     }
 
-    .projectImageFlexColumn {
-        flex-direction: column;
-    }
-    
     .projectImageFlexColumn550 {
         flex-direction: column;
     }
 
-    .projectImageFlexWrap {
-        flex-wrap: wrap;
-    }
-    
     .projectImageFlexWrap550 {
         flex-wrap: wrap;
-    }
-
-    .projectImageSideMargins {
-        margin-left: 10px;
-        margin-right: 10px;
     }
 
     .imageCaption {
@@ -1152,6 +1186,29 @@ footer > h5 {
     .navOptions > li {
         margin-left: 25px;
     }
+    
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: 200px;
+    }
+    
+    footer > h5 {
+        margin-top: 00px;
+    }
+
+    .footerOptions {
+        text-align: center;
+        height: 110px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .footerOptions > li {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
 
     /*home page*/
     .homeIntro {
@@ -1161,6 +1218,7 @@ footer > h5 {
     }
 
     .homeIntro > p {
+        margin-top: 0px;
         line-height: 40px;
     }
 
@@ -1194,9 +1252,20 @@ footer > h5 {
     }
 
     /*about*/
+    .aboutHeaderLink {
+        margin-bottom: 10px;
+        width: 100%;
+        margin-top: -5px;
+    }
+    
+    .aboutTop > p {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
     .aboutImage {
         height: auto;
-        width: 360px;
+        width: 320px;
     }
 
     .aboutBottom {
@@ -1209,32 +1278,39 @@ footer > h5 {
     /*project*/
     .projectHeader {
         height: auto;
+        flex-direction: column;
         align-items: flex-end;
+
     }
 
     .projectHeader > h1 {
         font-size: 30px;
-        width: 320px;
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 20px;
     }
 
     .projectHeader > h2 {
-        width: 150px;
-        font-size: 15px;
+        text-align: left;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 25px;
     }
 
     .projectFinal {
         height: 570px;
-        width: 385px;
+        width: 340px;
     }
 
     .projectFinal > iframe {
-        width: 365px;
-        height: 280px;
+        width: 320px;
+        height: 240px;
+        margin-right: 2px;
     }
 
     .projectFinal > img {
         height: auto;
-        width: 365px;
+        width: 320px;
     }
 
     .projectOneLiner {
@@ -1243,12 +1319,13 @@ footer > h5 {
 
     .projectOneLiner > p {
         left: -20px;
-        width: 300px;
+        width: 260px;
+        line-height: 25px;
     }
 
     .projectImage {
         height: 570px;
-        width: 385px;
+        width: 340px;
     }
 
     .projectImageVertical {
@@ -1261,7 +1338,7 @@ footer > h5 {
 
     .projectImageSingle {
         height: auto;
-        width: 365px;
+        width: 320px;
     }
 
     .projectIframeHorizontal {
@@ -1269,29 +1346,206 @@ footer > h5 {
         height: 200px;
     }
 
-    .projectImageFlexColumn {
-        flex-direction: column;
-    }
-    
-    .projectImageFlexColumn550 {
-        flex-direction: column;
+    .aloneScreens {
+        height: 260px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
-    .projectImageFlexWrap {
-        flex-wrap: wrap;
-    }
-    
-    .projectImageFlexWrap550 {
-        flex-wrap: wrap;
-    }
-
-    .projectImageSideMargins {
-        margin-left: 10px;
-        margin-right: 10px;
+    .cherryCards {
+        height: 220px;
     }
 
     .imageCaption {
-        width: 350px;
+        width: 300px;
+    }
+
+    .projectTitleText {
+        position: relative;
+        left: -10px;
+    }
+
+    .projectTitleText > h4 {
+        left: 10px;
+        width: 280px;
+    }
+
+    .projectTitleText > p {
+        width: 285px;
+    }
+
+    .projectLinkText {
+        display: inline;
+        position: relative;
+        left: -20px;
+        width: 280px;
+    }
+
+    .projectLinkText > a {
+        left: 0px;
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        scroll-padding: 80px;
+    }
+
+    nav {
+        height: 80px;
+    }
+
+    nav > h3 {
+        font-size: 30px;
+        width: 200px;
+    }
+
+    .navOptions > li {
+        margin-left: 25px;
+    }
+
+    /*home page*/
+    .homeIntro {
+        font-size: 23px;
+        width: 300px;
+        height: 470px;
+        left: 5px;
+    }
+
+    .homeIntro > p {
+        line-height: 33px;
+        font-size: 22px;
+    }
+
+    /*
+    .homeArrows {
+        top: 35px;
+    }
+*/
+
+    .homeArrows > a > img {
+        width: 35px;
+    }
+
+    .works {
+        padding: 60px 9px 20px 9px;
+    }
+
+    .filter {
+        height: 200px;
+        width: 280px;
+    }
+
+    .noFilter {
+        height: 200px;
+        width: 280px;
+    }
+
+    .works > div > a > h2 {
+        width: 270px;
+        font-size: 25px;
+
+    }
+
+    .works > div > a > h6 {
+        width: 230px;
+        font-size: 15px;
+    }
+
+    /*about*/
+    .aboutImage {
+        height: auto;
+        width: 265px;
+    }
+
+    .aboutBottom {
+        display: inline;
+        width: calc(100% - 50px);
+        position: relative;
+        left: 10px;
+    }
+
+    /*project*/
+    .projectHeader {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    .projectHeader > h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    .projectHeader > h2 {
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    .projectFinal {
+        height: 570px;
+        width: 285px;
+    }
+
+    .projectFinal > iframe {
+        width: 270px;
+        height: 200px;
+        margin-right: 2px;
+    }
+
+    .projectFinal > img {
+        height: auto;
+        width: 270px;
+        margin-right: 2px;
+    }
+
+    .projectOneLiner {
+        display: inline;
+    }
+
+    .projectOneLiner > p {
+        left: -20px;
+        width: 220px;
+        line-height: 25px;
+    }
+
+    .projectImage {
+        height: 570px;
+        width: 285px;
+    }
+
+    .projectImageVertical {
+        height: 270px;
+    }
+
+    .projectImageHorizontal {
+        margin-right: 2px;
+        width: 270px;
+    }
+
+    .projectImageSingle {
+        height: auto;
+        width: 270px;
+    }
+
+    .projectIframeHorizontal {
+        width: 270px;
+        height: 200px;
+    }
+
+    .aloneScreens {
+        height: 250px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .imageCaption {
+        width: 260px;
     }
 
     .projectTitleText {
@@ -1301,26 +1555,164 @@ footer > h5 {
 
     .projectTitleText > h4 {
         left: 10px;
-        width: 300px;
+        width: 260px;
     }
 
     .projectTitleText > p {
-        width: 340px;
+        width: 230px;
     }
 
     .projectLinkText {
-        display: inline;
-        position: relative;
-        left: -30px;
-        width: 300px;
+        left: -10px;
+        width: 240px;
     }
-
-    .projectLinkText > a {
-        left: 0px;
-    }
-    
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 320px) {
+    nav > h3 {
+        font-size: 28px;
+        margin-top: 26px;
+    }
 
-@media screen and (max-width: 320px) {}
+    .navOptions > li {
+        margin-left: 18px;
+        font-size: 18px;
+    }
+
+    /*home page*/
+    .homeIntro {
+        font-size: 23px;
+        width: 290px;
+        height: 505px;
+        left: 0px;
+    }
+
+    .works {
+        padding: 60px 9px 20px 9px;
+    }
+
+    .filter {
+        height: 187.5px;
+        width: 262.5px;
+    }
+
+    .noFilter {
+        height: 187.5px;
+        width: 262.5px;
+    }
+
+    .works > div > a > h2 {
+        width: 250px;
+    }
+
+    .works > div > a > h6 {
+        width: 220px;
+        font-size: 15px;
+    }
+
+    /*about*/
+    .aboutImage {
+        width: 253px;
+    }
+
+    .aboutBottom {
+        width: calc(100% - 50px);
+        left: 0px;
+    }
+
+    /*project*/
+    .projectHeader {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    .projectHeader > h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    .projectHeader > h2 {
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    .projectFinal {
+        width: 270px;
+    }
+
+    .projectFinal > iframe {
+        width: 253px;
+        height: 200px;
+    }
+
+    .projectFinal > img {
+        width: 253px;
+    }
+
+    .projectOneLiner {
+        display: inline;
+    }
+
+    .projectOneLiner > p {
+        left: -20px;
+        width: 220px;
+        line-height: 25px;
+    }
+
+    .projectImage {
+        width: 270px;
+    }
+
+    .projectImageVertical {
+        height: 250px;
+    }
+
+    .projectImageHorizontal {
+        width: 253px;
+    }
+
+    .projectImageSingle {
+        height: auto;
+        width: 253px;
+    }
+
+    .projectIframeHorizontal {
+        width: 253px;
+        height: 200px;
+    }
+
+    .aloneScreens {
+        height: 240px;
+    }
+    
+    .cherryCards {
+        height: 210px;
+    }
+
+    .imageCaption {
+        width: 250px;
+    }
+
+    .projectTitleText {
+        position: relative;
+        left: -20px;
+    }
+
+    .projectTitleText > h4 {
+        left: 10px;
+        width: 260px;
+    }
+
+    .projectTitleText > p {
+        width: 225px;
+    }
+
+    .projectLinkText {
+        left: -10px;
+        width: 240px;
+    }
+}

@@ -65,6 +65,18 @@ const app = {
                 } else {
                     $('.homeNav').addClass('hide');
                 }
+            } else if ($(".homeIntro").css("height") == "470px") {
+                if (this.pageYOffset >= 390) {
+                    $('.homeNav').removeClass('hide');
+                } else {
+                    $('.homeNav').addClass('hide');
+                }
+            } else if ($(".homeIntro").css("height") == "505px") {
+                if (this.pageYOffset >= 420) {
+                    $('.homeNav').removeClass('hide');
+                } else {
+                    $('.homeNav').addClass('hide');
+                }
             }
         });
     },
