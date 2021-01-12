@@ -53,14 +53,14 @@ const app = {
                 } else {
                     $('.homeNav').addClass('hide');
                 }
-            } else if ($(".homeIntro").css("height") == "490px") {
-                if (this.pageYOffset >= 425) {
+            } else if ($(".homeIntro").css("height") == "500px") {
+                if (this.pageYOffset >= 435) {
                     $('.homeNav').removeClass('hide');
                 } else {
                     $('.homeNav').addClass('hide');
                 }
-            } else if ($(".homeIntro").css("height") == "540px") {
-                if (this.pageYOffset >= 400) {
+            } else if ($(".homeIntro").css("height") == "560px") {
+                if (this.pageYOffset >= 485) {
                     $('.homeNav').removeClass('hide');
                 } else {
                     $('.homeNav').addClass('hide');

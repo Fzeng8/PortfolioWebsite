@@ -380,6 +380,13 @@ footer > h5 {
     font-style: italic;
 }
 
+.projectImageAll {
+    width: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .projectImage {
     margin-top: 50px;
     height: 550px;
@@ -433,11 +440,11 @@ footer > h5 {
     height: 500px;
 }
 
-
 .imageCaption {
     margin-top: 3px;
     margin-bottom: 0px;
     font-size: 13px;
+    width: 100%;
 }
 
 .projectTitleText {
@@ -809,16 +816,13 @@ footer > h5 {
     .homeIntro {
         font-size: 28px;
         left: 10px;
-        width: 500px;
+        width: calc(100% - 75px);
         height: 530px;
     }
 
     .homeIntro > p {
         line-height: 45px;
-    }
-
-    .homeArrows {
-        top: 30px;
+        margin-bottom: 30px;
     }
 
     .works {
@@ -851,7 +855,6 @@ footer > h5 {
         margin-bottom: 40px;
     }
 
-
     .aboutTop {
         display: inline;
     }
@@ -879,7 +882,6 @@ footer > h5 {
     }
 
     .projectHeader > h1 {
-        font-size: 35px;
         width: 350px;
         margin-bottom: 40px;
     }
@@ -893,7 +895,7 @@ footer > h5 {
 
     .projectFinal {
         height: 570px;
-        width: 510px;
+        width: calc(100% - 20px);
     }
 
     .projectFinal > iframe {
@@ -907,17 +909,18 @@ footer > h5 {
     }
 
     .projectOneLiner {
-        grid-template-columns: 230px 230px;
+        display: inline;
+        width: calc(100% - 20px)
     }
 
     .projectOneLiner > p {
         left: 30px;
-        width: 280px;
+        width: 310px;
     }
 
     .projectImage {
         height: 570px;
-        width: 510px;
+        width: calc(100% - 10px);
     }
 
     .projectImageVertical {
@@ -957,7 +960,7 @@ footer > h5 {
     }
 
     .imageCaption {
-        width: 500px;
+        width: calc(100% - 10px);
     }
 
     .projectTitleText {
@@ -985,8 +988,9 @@ footer > h5 {
     }
 
     .projectLinkText > a {
-        left: 30px;
+        left: 0px;
         width: 280px;
+        font-size: 23px;
     }
 }
 
@@ -1011,15 +1015,11 @@ footer > h5 {
     .homeIntro {
         font-size: 23px;
         width: 400px;
-        height: 490px;
+        height: 500px;
     }
 
     .homeIntro > p {
         line-height: 42px;
-    }
-
-    .homeArrows {
-        top: 40px;
     }
 
     .works {
@@ -1048,10 +1048,6 @@ footer > h5 {
     }
 
     /*about*/
-    .aboutHeaderLink {
-        margin-bottom: 40px;
-    }
-    
     .aboutTop > p {
         margin-top: -10px;
         margin-bottom: 10px;
@@ -1062,14 +1058,15 @@ footer > h5 {
         width: 360px;
     }
 
-    .aboutBottom {
-        display: inline;
-        width: calc(100% - 50px);
-        position: relative;
-        left: 10px;
+    /*project*/
+    .projectAll {
+        margin-top: 80px;
     }
 
-    /*project*/
+    .projectDetails {
+        width: 100%;
+    }
+
     .projectHeader {
         height: auto;
         align-items: flex-end;
@@ -1085,11 +1082,6 @@ footer > h5 {
         font-size: 15px;
     }
 
-    .projectFinal {
-        height: 570px;
-        width: 385px;
-    }
-
     .projectFinal > iframe {
         width: 365px;
         height: 280px;
@@ -1100,18 +1092,8 @@ footer > h5 {
         width: 365px;
     }
 
-    .projectOneLiner {
-        display: inline;
-    }
-
     .projectOneLiner > p {
-        left: -20px;
-        width: 300px;
-    }
-
-    .projectImage {
-        height: 570px;
-        width: 385px;
+        left: 30px;
     }
 
     .projectImageVertical {
@@ -1140,60 +1122,26 @@ footer > h5 {
         flex-wrap: wrap;
     }
 
-    .imageCaption {
-        width: 350px;
-    }
-
-    .projectTitleText {
-        position: relative;
-        left: -20px;
-    }
-
     .projectTitleText > h4 {
         left: 10px;
         width: 300px;
     }
 
-    .projectTitleText > p {
-        width: 340px;
-    }
-
     .projectLinkText {
-        display: inline;
         position: relative;
-        left: -30px;
+        left: -60px;
         width: 300px;
-    }
-
-    .projectLinkText > a {
-        left: 0px;
     }
 }
 
 @media screen and (max-width: 425px) {
-    html {
-        scroll-padding: 75px;
-    }
-
-    nav {
-        height: 80px;
-    }
-
-    nav > h3 {
-        font-size: 30px;
-    }
-
-    .navOptions > li {
-        margin-left: 25px;
-    }
-    
     footer {
         flex-direction: column;
         justify-content: center;
         align-content: center;
         height: 200px;
     }
-    
+
     footer > h5 {
         margin-top: 00px;
     }
@@ -1214,16 +1162,12 @@ footer > h5 {
     .homeIntro {
         font-size: 23px;
         width: 340px;
-        height: 540px;
+        height: 560px;
     }
 
     .homeIntro > p {
         margin-top: 0px;
         line-height: 40px;
-    }
-
-    .homeArrows {
-        top: 35px;
     }
 
     .works {
@@ -1257,22 +1201,17 @@ footer > h5 {
         width: 100%;
         margin-top: -5px;
     }
-    
+
     .aboutTop > p {
         margin-top: 20px;
-        margin-bottom: 10px;
     }
-    
+
     .aboutImage {
-        height: auto;
         width: 320px;
     }
 
     .aboutBottom {
-        display: inline;
-        width: calc(100% - 50px);
-        position: relative;
-        left: 10px;
+        left: 0px;
     }
 
     /*project*/
@@ -1297,11 +1236,6 @@ footer > h5 {
         margin-bottom: 25px;
     }
 
-    .projectFinal {
-        height: 570px;
-        width: 340px;
-    }
-
     .projectFinal > iframe {
         width: 320px;
         height: 240px;
@@ -1318,14 +1252,8 @@ footer > h5 {
     }
 
     .projectOneLiner > p {
-        left: -20px;
         width: 260px;
         line-height: 25px;
-    }
-
-    .projectImage {
-        height: 570px;
-        width: 340px;
     }
 
     .projectImageVertical {
@@ -1356,33 +1284,25 @@ footer > h5 {
         height: 220px;
     }
 
-    .imageCaption {
-        width: 300px;
-    }
-
     .projectTitleText {
         position: relative;
         left: -10px;
     }
 
     .projectTitleText > h4 {
-        left: 10px;
         width: 280px;
     }
 
     .projectTitleText > p {
-        width: 285px;
+        width: calc(100% - 10px);
     }
 
     .projectLinkText {
-        display: inline;
-        position: relative;
         left: -20px;
         width: 280px;
     }
 
     .projectLinkText > a {
-        left: 0px;
         font-size: 22px;
     }
 
@@ -1391,19 +1311,6 @@ footer > h5 {
 @media screen and (max-width: 375px) {
     html {
         scroll-padding: 80px;
-    }
-
-    nav {
-        height: 80px;
-    }
-
-    nav > h3 {
-        font-size: 30px;
-        width: 200px;
-    }
-
-    .navOptions > li {
-        margin-left: 25px;
     }
 
     /*home page*/
@@ -1419,11 +1326,9 @@ footer > h5 {
         font-size: 22px;
     }
 
-    /*
     .homeArrows {
-        top: 35px;
+        top: 25px;
     }
-*/
 
     .homeArrows > a > img {
         width: 35px;
@@ -1456,42 +1361,10 @@ footer > h5 {
 
     /*about*/
     .aboutImage {
-        height: auto;
         width: 265px;
     }
 
-    .aboutBottom {
-        display: inline;
-        width: calc(100% - 50px);
-        position: relative;
-        left: 10px;
-    }
-
     /*project*/
-    .projectHeader {
-        height: auto;
-        flex-direction: column;
-        align-items: flex-end;
-
-    }
-
-    .projectHeader > h1 {
-        font-size: 30px;
-        margin-bottom: 5px;
-        margin-top: 20px;
-    }
-
-    .projectHeader > h2 {
-        text-align: left;
-        margin-top: 5px;
-        margin-bottom: 25px;
-    }
-
-    .projectFinal {
-        height: 570px;
-        width: 285px;
-    }
-
     .projectFinal > iframe {
         width: 270px;
         height: 200px;
@@ -1504,19 +1377,8 @@ footer > h5 {
         margin-right: 2px;
     }
 
-    .projectOneLiner {
-        display: inline;
-    }
-
     .projectOneLiner > p {
-        left: -20px;
         width: 220px;
-        line-height: 25px;
-    }
-
-    .projectImage {
-        height: 570px;
-        width: 285px;
     }
 
     .projectImageVertical {
@@ -1554,24 +1416,27 @@ footer > h5 {
     }
 
     .projectTitleText > h4 {
-        left: 10px;
         width: 260px;
     }
 
-    .projectTitleText > p {
-        width: 230px;
-    }
-
     .projectLinkText {
-        left: -10px;
         width: 240px;
     }
 }
 
 @media screen and (max-width: 320px) {
+    html {
+        scroll-padding: 70px;
+    }
+
+    nav {
+        height: 70px;
+    }
+
     nav > h3 {
         font-size: 28px;
-        margin-top: 26px;
+        margin-top: 20px;
+        width: 200px;
     }
 
     .navOptions > li {
@@ -1615,35 +1480,11 @@ footer > h5 {
         width: 253px;
     }
 
-    .aboutBottom {
-        width: calc(100% - 50px);
-        left: 0px;
-    }
-
     /*project*/
-    .projectHeader {
-        height: auto;
-        flex-direction: column;
-        align-items: flex-end;
-
+    .projectAll {
+        margin-top: 70px;
     }
-
-    .projectHeader > h1 {
-        font-size: 30px;
-        margin-bottom: 5px;
-        margin-top: 20px;
-    }
-
-    .projectHeader > h2 {
-        text-align: left;
-        margin-top: 5px;
-        margin-bottom: 25px;
-    }
-
-    .projectFinal {
-        width: 270px;
-    }
-
+    
     .projectFinal > iframe {
         width: 253px;
         height: 200px;
@@ -1653,18 +1494,8 @@ footer > h5 {
         width: 253px;
     }
 
-    .projectOneLiner {
-        display: inline;
-    }
-
     .projectOneLiner > p {
-        left: -20px;
-        width: 220px;
-        line-height: 25px;
-    }
-
-    .projectImage {
-        width: 270px;
+        left: 20px;
     }
 
     .projectImageVertical {
@@ -1688,27 +1519,13 @@ footer > h5 {
     .aloneScreens {
         height: 240px;
     }
-    
+
     .cherryCards {
         height: 210px;
     }
 
-    .imageCaption {
-        width: 250px;
-    }
-
-    .projectTitleText {
-        position: relative;
-        left: -20px;
-    }
-
     .projectTitleText > h4 {
-        left: 10px;
         width: 260px;
-    }
-
-    .projectTitleText > p {
-        width: 225px;
     }
 
     .projectLinkText {
