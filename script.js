@@ -48,7 +48,7 @@ const app = {
                     $('.homeNav').addClass('hide');
                 }
             } else if ($(".homeIntro").css("height") == "530px") {
-                if (this.pageYOffset >= 470) {
+                if (this.pageYOffset >= 468) {
                     $('.homeNav').removeClass('hide');
                 } else {
                     $('.homeNav').addClass('hide');
@@ -60,7 +60,7 @@ const app = {
                     $('.homeNav').addClass('hide');
                 }
             } else if ($(".homeIntro").css("height") == "560px") {
-                if (this.pageYOffset >= 485) {
+                if (this.pageYOffset >= 480) {
                     $('.homeNav').removeClass('hide');
                 } else {
                     $('.homeNav').addClass('hide');
