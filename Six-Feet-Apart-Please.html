@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZR7W5J4LEX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZR7W5J4LEX');
+
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Faith Zeng - Six Feet Apart, Please!</title>
+    <link rel="shortcut icon" type="image/png" href="Favicon.png"/>
+    <meta name="description" content="A playful VR simulation mapped to the physical space about COVID-19’s social distancing and its influence on social interactions, made with Aidan Massie and Kyle Chang.  This project used virtual reality, Unity, and an Oculus Quest.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--    social media-->
+    <meta property="og:image" content="https://res.cloudinary.com/byfaithzeng/image/upload/v1641612660/Portfolio/HomePage/HomeSixFeet.jpg">
+    <meta property="og:image:alt" content="Six Feet Apart, Please!" />
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:height" content="642">
+    <meta property="og:image:width" content="900">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://byfaithzeng.com/Six-Feet-Apart-Please.html"/>
+    <meta property="og:title" content="Faith Zeng - Six Feet Apart, Please!" />
+    <meta property="og:description" content="A playful VR simulation mapped to the physical space about COVID-19’s social distancing and its influence on social interactions, made with Aidan Massie and Kyle Chang.  This project used virtual reality, Unity, and an Oculus Quest." />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h3><a href="index.html">Faith Zeng</a></h3>
+
+        <ul class="navOptions">
+            <li><a href="index.html#works">works</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </nav>
+
+    <section class="projectAll">
+        <div class="projectHeader">
+            <h1>Six Feet Apart, Please!</h1>
+            <h2>Installation, virtual reality, Unity, Oculus Quest</h2>
+        </div>
+
+        <div class="projectFinal backgroudCyan">
+            <iframe src="https://www.youtube.com/embed/A_StiIQ44Oo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="projectDetails">
+            <div class="projectOneLiner">
+                <p>A playful VR simulation mapped to the physical space about COVID-19’s social distancing and its influence on social interactions, made with Aidan Massie and Kyle Chang. </p>
+            </div>
+
+            <div class="projectImageAll">
+                <div class="projectImage backgroudCyan projectImageFlexColumn">
+                    <img src="https://res.cloudinary.com/byfaithzeng/image/upload/f_auto,q_auto:best/v1642399611/Portfolio/SixFeetApart/ClubberInteraction.gif" alt="Clubbers being knocked away in virtual world" class="projectImageVertical">
+                    <img src="https://res.cloudinary.com/byfaithzeng/image/upload/f_auto,q_auto:best/v1642399608/Portfolio/SixFeetApart/WalkingPhysicalWorld.gif" alt="Walking with VR headset in the physical world" class="projectImageVertical">
+                </div>
+                <p class="imageCaption">VIRTUAL REALITY VIEW AND PHYSICAL WOLRD VIEW</p>
+            </div>
+
+            <div class="projectTitleText">
+                <h4>About the Project</h4>
+                <p>Six Feet Apart Please! is a playful VR simulation about COVID-19’s social distancing and its influence on social interactions. The user enters a virtual club with other people, but they also walk through the physical world to explore the virtual world. In the headset, people are pushed away whenever the user breaks the six-foot standard for social distancing. Through the comical instances of the 3D scanned people being pushed away from the VR user, <strong>this project reflects on the anxiety of trying to meet new people again after being isolated for so long.</strong>
+                <br><br>
+                This project was made with Aidan Maisse and Kyle Chang. I worked in <strong>Unity</strong> to map the VR environment to the physical world through OSC and code the <strong>Oculus Quest locomotion</strong> and <strong>player interactions</strong>. Aidan created the VR environment and Kyle  worked with the 3D scans.</p>
+            </div>
+
+            <div class="projectImageAll">
+                <div class="projectImage backgroudCyan projectImageFlexColumn">
+                    <iframe src="https://www.youtube.com/embed/X61qFZSaQdE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="projectIframeHorizontal"></iframe>
+                    <img src="https://res.cloudinary.com/byfaithzeng/image/upload/f_auto,q_auto:best/v1642399584/Portfolio/SixFeetApart/GeneratedMap.jpg" alt="Generated Map in Unity" class="projectImageVertical">
+                </div>
+                <p class="imageCaption">MAPPING PHYSICAL WORLD TO VIRTUAL WORLD</p>
+            </div>
+
+            <div class="projectTitleText">
+                <h4>Physical World to Virtual World</h4>
+                <p><span class="bold">An essential part to Six Feet Apart, Please! is that the user’s virtual position is matched by the user’s position in the physical world. To ensure this happens, there are two key parts: 1) the virtual world must be mapped to the physical world perfectly, and 2) the VR locomotion must be controlled by the user walking around in the physical space, not by the controllers.</span><br><br>
+                We quickly realised measuring the physical room and recreating it in Unity would not work because the virtual room ended up being bigger than the physical room. For our second try, I followed <a href="https://emanueltomozei.wordpress.com/2020/04/14/tutorial-how-to-map-a-vr-environment-to-your-home/" target="_blank">this tutorial by Emanuel Tomozei</a> that allowed us to map out the physical room by using the Oculus Quest 2 and Unity. It involved using an Open Sound Control script that allowed the Oculus to communicate with Unity through WiFi.<br><br>
+                To map out the room, someone had to wear the Oculus headset and hold both controllers. Then, they would place the controller at some point in the room, such as the ground or wall, and press the B button. This would create a cube that appeared where the controller is. The person would continue to trace around the floor, walls, and furniture in the room while pressing B. This would eventually generate an outline of the physical room in the virtual environment. <br><br>
+                Using the generated map, we were able to recreate the physical room in Unity with the correct dimensions. By following the outlines, Aidan placed the virtual walls, doorway, ground, and tables at the right position with the right scale that matched the physical room.</p>
+            </div>
+
+            <div class="projectImageAll">
+                <div class="projectImage backgroudCyan projectImageFlexColumn">
+                    <iframe src="https://www.youtube.com/embed/LtRbXyi3jNQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="projectIframeHorizontal"></iframe>
+                    <iframe src="https://www.youtube.com/embed/gHwYSR2pxHg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="projectIframeHorizontal"></iframe>
+                </div>
+                <p class="imageCaption">DIFFERENT LOCOMOTION TESTS</p>
+            </div>
+
+            <div class="projectTitleText">
+                <h4>Player Locomotion</h4>
+                <p>The next step was making the VR user walk around in the virtual environment by walking in the physical space, not by using the VR controllers. Since this was my first time using VR, I decided to start with the sample locomotion scene from the Oculus Integration package. By using the PlayerController prefab, the locomotion scene allowed users to navigate through the scene with the controllers. Although this is not the method of moving we wanted, we used the PlayerController for a while to test other elements of the project, such as navigating through the virtual recreated room and testing interactions with the 3D scans.<br><br>After following the tutorial by Emanuel Tomozei as mentioned before, we were able to figure out how to walk through the virtual scene while walking in the real world. This was done by using the OVRCameraRig from the Oculus Integration package; however, once this was changed, we ran into a new problem with collisions. </p>
+            </div>
+
+            <div class="projectImageAll">
+                <div class="projectImage backgroudCyan projectImageFlexColumn">
+                    <iframe src="https://www.youtube.com/embed/jmAPn3Em7T0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="projectIframeHorizontal"></iframe>
+                    <iframe src="https://www.youtube.com/embed/s8jdPZHMNCc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="projectIframeHorizontal"></iframe>
+                </div>
+                <p class="imageCaption">COLLISION TESTS</p>
+            </div>
+
+            <div class="projectTitleText">
+                <h4>Simulation Interaction</h4>
+                <p>The interaction in Six Feet Apart Please! involves the VR user to walk up to 3D scans of people, and then the 3D scans would move away from the user in a comical way. Before we started testing with the 3D scans, we worked with cylinders to make sure the collision was working. At this point, we were using the PlayerController prefab from the Oculus Integration package, which used the VR controllers to navigate around. <br><br>Once Kyle had turned people 3D scans into rigged models, I replaced the cylinders with the scan, and the collision was proven to be successful again. I had written a script that was attached to the player that detected when the player’s collider was hit by the 3D scans. This would trigger Kyle’s scripts on the 3D scans to be pushed away, go into ragdoll physics, and eventually, get back up again.</p>
+            </div>
+
+            <div class="projectImageAll">
+                <div class="projectImage backgroudCyan projectImageFlexColumn">
+                    <iframe src="https://www.youtube.com/embed/5QWIPl3iyQU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="projectIframeHorizontal"></iframe>
+                    <iframe src="https://www.youtube.com/embed/o4s07JtdVW0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="projectIframeHorizontal"></iframe>
+                </div>
+                <p class="imageCaption">UNEXPECTED INTERACTION FROM TESTING AND COLLIDER TRACKING</p>
+            </div>
+
+            <div class="projectTitleText">
+                <h4>Player Collision</h4>
+                <p>After the locomotion problem was solved and we switched to OVRCameraRig instead of the PlayerController prefab, collisions between the VR player and 3D scanned people stopped working. I spent a lot of time testing in Unity by adding scripts and rearranging the hierarchy of the player as well as looking up answers online. This led to some funny VR interactions, including the spinning 3D scan video above. <br><br>Eventually, I realised the problem was that the collider on the OVRCameraRig would not move with the player in the VR experience; instead, the collider would stay at the starting spot by the door. I found this out by placing a red capsule on the OVRCameraRig that could be seen when the VR experience was happening; however, the problem was still not solved.<br><br>
+                At the end, we realised we should switch from using the OVRCameraRig to the OVRPlayerController. The OVRPlayerController also contained the OVRCameraRig, but the different components on the OVRPlayerController allowed the colliders in it to follow the player when the player moved. We ended up placing a capsule collider on the CenterEyeAnchor that would start the colliding interactions.<br><br><br><br></p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer>
+        <h5>Hand-coded by Faith Zeng</h5>
+
+        <ul class="footerOptions">
+            <li><a href="mailto: zengfaith@gmail.com" target=”_blank”>zengfaith@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/byfaithzeng/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com/channel/UCr4fZLjE5jN-VKA_orJxL0w" target="_blank">YouTube</a></li>
+            <li><a href="https://www.linkedin.com/in/faith-zeng/" target="_blank">LinkedIn</a></li>
+
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>

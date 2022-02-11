@@ -11,9 +11,12 @@ body {
     margin: 0px;
 }
 
+/*@font-face { font-family: Bikeride; src: url('Bikeride.ttf'); } */
+
 a {
     color: #f4f4f4;
     text-decoration: none;
+/*    font-family: 'Bikeride', cursive;*/
     font-family: 'Viaoda Libre', cursive;
     font-weight: 700;
 }
@@ -419,7 +422,7 @@ footer > h5 {
     filter: drop-shadow(5px 5px 10px #383838);
     margin-bottom: 2px;
     width: 800px;
-    height: 475px;
+    height: 500px;
 }
 
 .aloneScreens {
@@ -553,6 +556,10 @@ footer > h5 {
     }
 
     /*project*/
+    .projectHeaderLong {
+        margin-bottom: 50px;
+    }
+    
     .projectFinal {
         height: 450px;
         width: 900px;
@@ -599,8 +606,8 @@ footer > h5 {
     }
 
     .projectIframeSingle {
-        width: 800px;
-        height: 475px;
+        width: 700px;
+        height: 400px;
     }
 
     .aloneScreens {
@@ -745,6 +752,11 @@ footer > h5 {
     }
 
     .projectImageSingle {
+        height: 315px;
+    }
+    
+    .projectIframeSingle {
+        width: 550px;
         height: 315px;
     }
 
@@ -898,6 +910,10 @@ footer > h5 {
         width: 170px;
         text-align: right;
     }
+    
+    .projectHeaderLong {
+        margin-bottom: 0px;
+    }
 
     .projectFinal {
         height: 570px;
@@ -940,6 +956,11 @@ footer > h5 {
     .projectImageSingle {
         height: auto;
         width: 450px;
+    }
+    
+    .projectIframeSingle {
+        width: 460px;
+        height: 345px;
     }
 
     .projectIframeHorizontal {
@@ -1115,6 +1136,11 @@ footer > h5 {
         height: auto;
         width: 365px;
     }
+    
+    .projectIframeSingle {
+        width: 365px;
+        height: 280px;
+    }
 
     .projectIframeHorizontal {
         width: 280px;
@@ -1281,6 +1307,12 @@ footer > h5 {
         height: auto;
         width: 320px;
     }
+    
+    .projectIframeSingle {
+        width: 320px;
+        height: 240px;
+        margin-right: 2px;
+    }
 
     .projectIframeHorizontal {
         width: 280px;
@@ -1412,6 +1444,12 @@ footer > h5 {
     .projectImageSingle {
         height: auto;
         width: 270px;
+    }
+    
+    .projectIframeSingle {
+        width: 270px;
+        height: 200px;
+        margin-right: 2px;
     }
 
     .projectIframeHorizontal {
