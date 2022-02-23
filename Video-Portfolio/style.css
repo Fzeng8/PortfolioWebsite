@@ -1,0 +1,559 @@
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background-color: #efefef;
+    font-family: 'PT Sans', sans-serif;
+    color: #23233d;
+    margin: 0px;
+}
+
+a {
+    color: #23233d;
+    text-decoration: underline;
+/*    font-weight: 700;*/
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #dd003e;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.hideClassFlex {
+    display: flex;
+}
+
+.buttonShadow {
+    filter: drop-shadow(0px 3px 5px #3b3e44);
+}
+
+.italics {
+    font-style: italic;
+}
+
+nav {
+    background-color: #262d3f;
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+}
+
+nav > div > h3 {
+    color: #dd003e;
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 50px;
+}
+
+.navTitle {
+    font-weight: 400;
+}
+
+nav > div > ul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+nav > div > ul > li {
+    margin-bottom: 5px;
+}
+
+.navPage {
+    margin-top: 30px;
+}
+
+.navPage > li > a {
+    color: #9ffcf6;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.navPage > li > a:hover {
+    text-decoration: underline;
+}
+
+.navSocials > li > a {
+    color: #9ffcf6;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navSocials > li > a:hover {
+    text-decoration: underline;
+}
+
+.mobileNav {
+    display: none;
+}
+
+.bodyName {
+    display: none;
+}
+
+.bodyAll {
+    margin-left: 300px;
+    margin-right: 40px;
+}
+
+.worksAll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #dd003e;
+}
+
+.worksOne {
+    height: 520px;
+    width: 500px;
+}
+
+.workImage {
+    width: 500px;
+    height: auto;
+}
+
+.worksOne > h2 {
+    color: #ff6d74;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.worksOne > p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.worksOne > h4 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.aboutFlex {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.aboutInfo {
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutInfo > p {
+    margin-top: 0px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.aboutInfo > h4 {
+    margin-bottom: 0px;
+}
+
+.aboutInfo > h4 > a {
+    color: #ff6d74;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.aboutInfo > h4 > a:hover {
+    text-decoration: underline;
+}
+
+.aboutFlex > img {
+    width: 500px;
+    height: auto;
+    align-self: center;
+}
+
+.SocialTag {
+    display: none;
+}
+
+@media screen and (min-width: 2400px) {
+    .bodyAll {
+        margin-left: 360px;
+        margin-right: 100px;
+    }
+
+    .worksOne {
+        height: 540px;
+        width: 600px;
+    }
+
+    .workImage {
+        width: 600px;
+        height: auto;
+    }
+
+    .aboutInfo {
+        margin-right: 500px;
+    }
+
+    .aboutFlex > img {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 2200px) and (max-width: 2399px) {
+    .bodyAll {
+        margin-left: 360px;
+        margin-right: 100px;
+    }
+
+    .worksOne {
+        height: 540px;
+        width: 500px;
+    }
+
+    .workImage {
+        width: 500px;
+        height: auto;
+    }
+
+    .aboutInfo {
+        margin-right: 400px;
+    }
+
+    .aboutFlex > img {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2199px) {
+    .aboutInfo {
+        margin-right: 400px;
+    }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 1999px) {
+    .worksOne {
+        height: 610px;
+        width: 650px;
+    }
+
+    .workImage {
+        width: 650px;
+    }
+
+    .aboutFlex > img {
+        width: 650px;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1799px) {
+    .worksOne {
+        height: 580px;
+        width: 600px;
+    }
+
+    .workImage {
+        width: 600px;
+    }
+
+    .aboutFlex > img {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .worksOne {
+        height: 530px;
+        width: 450px;
+    }
+
+    .workImage {
+        width: 450px;
+    }
+
+    .aboutFlex > img {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .worksOne {
+        height: 530px;
+        width: 400px;
+    }
+
+    .workImage {
+        width: 400px;
+    }
+
+    .aboutInfo {
+        margin-right: 120px;
+    }
+
+    .aboutFlex > img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        width: 210px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    .bodyAll {
+        margin-left: 270px;
+        margin-right: 30px;
+    }
+
+    .worksOne {
+        height: 530px;
+        width: 360px;
+    }
+
+    .workImage {
+        width: 360px;
+    }
+
+    .aboutInfo {
+        margin-right: 100px;
+    }
+
+    .aboutFlex > img {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .worksOne {
+        height: auto;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .workImage {
+        width: 100%;
+    }
+
+    .aboutInfo {
+        margin-right: 100px;
+    }
+
+    .aboutFlex {
+        flex-direction: column-reverse;
+    }
+
+    .aboutInfo {
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+
+    .aboutFlex > img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 160px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    nav > div > h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .navPage {
+        margin-top: 10px;
+    }
+
+    .navPage > li > a {
+        font-size: 20px;
+    }
+
+    .navSocials > li > a {
+        font-size: 15px;
+    }
+
+    .bodyAll {
+        margin-left: 240px;
+        margin-right: 60px;
+    }
+
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 45px;
+        color: #dd003e;
+    }
+
+    .worksAll {
+        margin-bottom: 0px;
+    }
+
+    .worksOne {
+        margin-bottom: 30px;
+    }
+
+    .worksOne > h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .worksOne > p {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .worksOne > h4 {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+
+    .aboutFlex {
+        margin-bottom: 30px;
+    }
+
+    .aboutInfo > p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .aboutInfo > h4 {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bodyAll {
+        margin-left: 210px;
+        margin-right: 30px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        display: none;
+    }
+
+    nav > div > h3 {
+        text-align: center;
+    }
+
+    nav > div > ul {
+        text-align: center;
+    }
+
+    .navPage {
+        margin-top: 20px;
+    }
+
+    .navPage > li > a {
+        font-size: 25px;
+    }
+
+    .navSocials {
+        margin-bottom: 40px;
+    }
+
+    .navSocials > li > a {
+        font-size: 17px;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+
+    .navButton {
+        width: 80px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .bodyName {
+        display: block;
+        background-color: #262d3f;
+        color: #dd003e;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 15px 10px 15px 10px;
+        font-size: 35px;
+    }
+
+    .bodyTitle {
+        font-weight: 400;
+    }
+
+    .bodyAll {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .bodyAll {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .mobileNav > img {
+        width: 80px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .bodyAll {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .bodyName {
+        font-size: 30px;
+    }
+    
+    .mobileNav > img {
+        width: 70px;
+    }
+
+}
+
+@media screen and (max-width: 325px) {
+    .bodyAll {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
