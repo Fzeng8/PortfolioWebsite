@@ -1,0 +1,1587 @@
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background-image: url("BackgroundPattern.jpg");
+    background-attachment: fixed;
+    font-family: 'PT Sans', sans-serif;
+    color: #23233d;
+    margin: 0px;
+}
+
+/*@font-face { font-family: Bikeride; src: url('Bikeride.ttf'); } */
+
+a {
+    color: #f4f4f4;
+    text-decoration: none;
+/*    font-family: 'Bikeride', cursive;*/
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: 700;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dd003e;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 90px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #f4f4f4;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    background-image: url("BackgroundPattern.jpg");
+    background-attachment: fixed;
+    z-index: 2;
+    /*    display: none;*/
+}
+
+nav > h3 {
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.navOptions {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    height: 20px;
+    float: right;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.navOptions > li {
+    margin-left: 30px;
+}
+
+.navOptions > li > a {
+    font-family: 'PT Sans', sans-serif;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #f4f4f4;
+}
+
+footer > h5 {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.footerOptions {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-end;
+    /*    width: 200px;*/
+    height: 20px;
+}
+
+.footerOptions > li > a {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+
+.footerOptions > li {
+    margin-left: 30px;
+}
+
+/*toggle classes*/
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.fadein {
+    opacity: 0;
+}
+
+/*home page*/
+.homeIntro {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    left: 40px;
+    width: 1100px;
+    height: 600px;
+    color: #f4f4f4;
+    font-size: 35px;
+    margin-bottom: -90px;
+}
+
+.homeIntro > p {
+    position: relative;
+    top: 30px;
+    line-height: 65px;
+}
+
+.homeArrows {
+    width: 45px;
+    position: relative;
+    top: 30px;
+}
+
+#works {
+    scroll-snap-align: start;
+}
+
+.homeWorks {
+    background-color: rgba(244, 244, 244, 0.9);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 90px;
+}
+
+.works {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    padding: 100px 50px 50px 50px;
+    height: 100%;
+}
+
+.works > div {
+    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.works > div > a {
+    font-family: 'PT Sans', sans-serif;
+    color: #23233d;
+
+}
+
+.works > div > a:hover {
+    text-decoration: none;
+    color: #dd003e;
+}
+
+.filter {
+    height: 321px;
+    width: 450px;
+}
+
+.noFilter {
+    height: 321px;
+    width: 450px;
+    z-index: -1;
+}
+
+.works > div > a > h2 {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+}
+
+.works > div > a > h6 {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+/*about*/
+.aboutHeaderLink > a {
+    color: #23233d;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.aaboutHeaderLink > a:hover {
+    color: #dd003e;
+    font-size: 20px;
+}
+
+.content {
+    grid-area: main;
+}
+
+.aboutTop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "main .";
+    grid-template-columns: 475px 575px;
+    column-gap: 50px;
+}
+
+.aboutTop > p {
+    position: relative;
+    left: 90px;
+}
+
+.aboutTop > p > a {
+    color: #23233d;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.aboutTop > p > a:hover {
+    color: #dd003e;
+    font-size: 22px;
+}
+
+.aboutImage {
+    height: 450px;
+    filter: drop-shadow(5px 5px 10px #383838);
+}
+
+.aboutBottom {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 475px 575px;
+    grid-template-areas: "hd main";
+    column-gap: 50px;
+}
+
+.aboutBottom > p > a {
+    color: #23233d;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.aboutBottom > p > a:hover {
+    color: #dd003e;
+    font-size: 22px;
+}
+
+/*project pages*/
+.projectAll {
+    font-size: 20px;
+    background-color: rgba(244, 244, 244, 0.9);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectHeader {
+    height: 105px;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.projectHeader > h1 {
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.projectHeader > h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.backgroudCoral {
+    background-color: #ff6d74;
+}
+
+.backgroudCyan {
+    background-color: #9ffcf6;
+}
+
+.backgroudBlue {
+    background-color: #25e8d1;
+}
+
+.backgroudRed {
+    background-color: #dd003e;
+}
+
+.projectFinal {
+    height: 550px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectFinal > iframe {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    width: 800px;
+    height: 500px;
+}
+
+.projectFinal > img {
+    height: 500px;
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+}
+
+.projectDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oneLiner {
+    grid-area: ol;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.projectOneLiner {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "ol .";
+    grid-template-columns: 575px 575px;
+    column-gap: 50px;
+}
+
+.projectOneLiner > p {
+    line-height: 30px;
+    position: relative;
+    left: 90px;
+    width: 500px;
+    font-style: italic;
+}
+
+.projectImageAll {
+    width: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectImage {
+    margin-top: 50px;
+    height: 550px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectImageVertical {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    height: 500px;
+}
+
+.projectImageHorizontal {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    width: 450px;
+}
+
+.projectImageSingle {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    height: 500px;
+}
+
+.projectIframeHorizontal {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    width: 490px;
+    height: 300px;
+}
+
+.projectIframeSingle {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    width: 800px;
+    height: 500px;
+}
+
+.aloneScreens {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    height: 450px;
+}
+
+.cherryCards {
+    filter: drop-shadow(5px 5px 10px #383838);
+    margin-bottom: 2px;
+    height: 500px;
+}
+
+.imageCaption {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    width: 1100px;
+}
+
+.projectTitleText {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "hd main";
+    grid-template-columns: 475px 575px;
+    column-gap: 50px;
+}
+
+.projectTitleText > h4 {
+    position: relative;
+    top: -10px;
+    left: 90px;
+    width: 400px;
+    font-family: 'Viaoda Libre', cursive;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.projectTitleText > p > a {
+    color: #23233d;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.projectTitleText > p > a:hover {
+    color: #dd003e;
+    font-size: 22px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.projectLinkText {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "hd .";
+    grid-template-columns: 475px 575px;
+    column-gap: 50px;
+}
+
+.projectLinkText > a {
+    position: relative;
+    top: -10px;
+    left: 90px;
+    width: 400px;
+    font-family: 'Viaoda Libre', cursive;
+    font-style: italic;
+    color: #23233d;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.projectLinkText > a:hover {
+    color: #dd003e;
+}
+
+.lastDetail {
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 2000px) {
+    .homeIntro {
+        width: 1400px;
+        height: 520px;
+    }
+
+    .filter {
+        height: 500px;
+        width: 700px;
+    }
+
+    .noFilter {
+        height: 500px;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /*home page*/
+    .homeIntro {
+        width: 850px;
+        height: 710px;
+    }
+
+    /*about*/
+    .aboutTop {
+        grid-template-columns: 425px 425px;
+    }
+
+    .aboutTop > p {
+        left: 90px;
+    }
+
+    .aboutImage {
+        height: 400px;
+    }
+
+    .aboutBottom {
+        grid-template-columns: 425px 425px;
+    }
+
+    /*project*/
+    .projectHeaderLong {
+        margin-bottom: 50px;
+    }
+    
+    .projectFinal {
+        height: 450px;
+        width: 900px;
+    }
+
+    .projectFinal > iframe {
+        width: 700px;
+        height: 400px;
+    }
+
+    .projectFinal > img {
+        height: 400px;
+    }
+
+    .projectOneLiner {
+        grid-template-columns: 425px 425px;
+    }
+
+    .projectOneLiner > p {
+        left: 50px;
+        width: 380px;
+    }
+
+    .projectImage {
+        height: 450px;
+        width: 900px;
+    }
+
+    .projectImageVertical {
+        height: 400px;
+    }
+
+    .projectImageHorizontal {
+        width: 400px;
+    }
+
+    .projectImageSingle {
+        height: 400px;
+    }
+
+    .projectIframeHorizontal {
+        width: 420px;
+        height: 300px;
+    }
+
+    .projectIframeSingle {
+        width: 700px;
+        height: 400px;
+    }
+
+    .aloneScreens {
+        height: 400px;
+    }
+
+    .cherryCards {
+        height: 400px;
+    }
+
+    .imageCaption {
+        width: 900px;
+    }
+
+    .projectTitleText {
+        grid-template-columns: 425px 425px;
+    }
+
+    .projectTitleText > h4 {
+        left: 50px;
+        width: 380px;
+    }
+
+    .projectLinkText {
+        grid-template-columns: 425px 425px;
+    }
+
+    .projectLinkText > a {
+        left: 50px;
+        width: 380px;
+    }
+
+}
+
+@media screen and (max-width: 1059px) {
+    .filter {
+        height: 280px;
+        width: 392px;
+    }
+
+    .noFilter {
+        height: 280px;
+        width: 392px;
+    }
+
+    .works > div > a > h2 {
+        width: 280px;
+
+    }
+
+    .works > div > a > h6 {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 943px) {
+
+    /*home page*/
+    .homeIntro {
+        width: 700px;
+        height: 720px;
+    }
+
+    .homeIntro > p {
+        line-height: 55px;
+    }
+
+    .homeArrows {
+        top: 35px;
+    }
+
+    .filter {
+        height: 200px;
+        width: 280px;
+    }
+
+    .noFilter {
+        height: 200px;
+        width: 280px;
+    }
+
+    /*about*/
+    .aboutTop {
+        grid-template-columns: 340px 340px;
+    }
+
+    .aboutTop > p {
+        left: 40px;
+    }
+
+    .aboutImage {
+        height: 315px;
+    }
+
+    .aboutBottom {
+        grid-template-columns: 340px 340px;
+    }
+
+    /*project*/
+    .projectFinal {
+        height: 365px;
+        width: 730px;
+    }
+
+    .projectHeader {
+        height: 90px;
+    }
+
+    .projectHeader > h1 {
+        font-size: 35px;
+    }
+
+    .projectFinal > iframe {
+        width: 550px;
+        height: 315px;
+    }
+
+    .projectFinal > img {
+        height: 315px;
+    }
+
+    .projectOneLiner {
+        grid-template-columns: 340px 340px;
+    }
+
+    .projectOneLiner > p {
+        left: 40px;
+        width: 300px;
+    }
+
+    .projectImage {
+        height: 365px;
+        width: 730px;
+    }
+
+    .projectImageVertical {
+        height: 315px;
+    }
+
+    .projectImageHorizontal {
+        width: 300px;
+    }
+
+    .projectImageSingle {
+        height: 315px;
+    }
+    
+    .projectIframeSingle {
+        width: 550px;
+        height: 315px;
+    }
+
+    .projectIframeHorizontal {
+        width: 280px;
+        height: 200px;
+    }
+
+    .aloneScreens {
+        height: 300px;
+    }
+
+    .cherryCards {
+        height: 320px;
+    }
+
+    .imageCaption {
+        width: 730px;
+    }
+
+    .projectTitleText {
+        grid-template-columns: 340px 340px;
+    }
+
+    .projectTitleText > h4 {
+        left: 40px;
+        width: 300px;
+    }
+
+    .projectLinkText {
+        grid-template-columns: 340px 340px;
+    }
+
+    .projectLinkText > a {
+        left: 40px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        align-items: center;
+        justify-content: space-between;
+        height: 140px;
+    }
+
+    .footerOptions {
+        text-align: right;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 110px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .footerOptions > li > a {
+        font-size: 16px;
+    }
+
+    .footerOptions > li {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    /*home page*/
+    .homeIntro {
+        font-size: 28px;
+        left: 10px;
+        width: 520px;
+        height: 670px;
+    }
+
+    .homeIntro > p {
+        line-height: 45px;
+        margin-bottom: 30px;
+    }
+
+    .works {
+        padding: 100px 30px 50px 30px;
+    }
+
+    .filter {
+        height: 150px;
+        width: 210px;
+    }
+
+    .noFilter {
+        height: 150px;
+        width: 210px;
+    }
+
+    .works > div > a > h2 {
+        width: 180px;
+        font-size: 20px;
+
+    }
+
+    .works > div > a > h6 {
+        width: 180px;
+        font-size: 13px;
+    }
+
+    /*about*/
+    .aboutHeaderLink {
+        margin-bottom: 40px;
+    }
+
+    .aboutTop {
+        display: inline;
+    }
+
+    .aboutTop > p {
+        left: 30px;
+        width: calc(100% - 50px);
+    }
+
+    .aboutImageAll {
+        width: calc(100% - 10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutImage {
+        height: 345px;
+    }
+
+    .aboutBottom {
+        display: inline;
+        width: calc(100% - 50px);
+        position: relative;
+        left: 10px;
+    }
+
+    /*project*/
+    .projectHeader {
+        height: auto;
+        align-items: flex-end;
+    }
+
+    .projectHeader > h1 {
+        width: 350px;
+        margin-bottom: 40px;
+    }
+
+    .projectHeader > h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 170px;
+        text-align: right;
+    }
+    
+    .projectHeaderLong {
+        margin-bottom: 0px;
+    }
+
+    .projectFinal {
+        height: 570px;
+        width: calc(100% - 20px);
+    }
+
+    .projectFinal > iframe {
+        width: 460px;
+        height: 345px;
+    }
+
+    .projectFinal > img {
+        height: auto;
+        width: 460px;
+    }
+
+    .projectOneLiner {
+        display: inline;
+        width: calc(100% - 20px)
+    }
+
+    .projectOneLiner > p {
+        left: 30px;
+        width: 310px;
+    }
+
+    .projectImage {
+        height: 570px;
+        width: calc(100% - 10px);
+    }
+
+    .projectImageVertical {
+        height: 270px;
+    }
+
+    .projectImageHorizontal {
+        width: 300px;
+    }
+
+    .projectImageSingle {
+        height: auto;
+        width: 450px;
+    }
+    
+    .projectIframeSingle {
+        width: 460px;
+        height: 345px;
+    }
+
+    .projectIframeHorizontal {
+        width: 280px;
+        height: 200px;
+    }
+
+    .projectImageFlexColumn {
+        flex-direction: column;
+    }
+
+    .projectImageFlexWrap {
+        flex-wrap: wrap;
+    }
+
+    .aloneScreens {
+        height: 260px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cherryCards {
+        height: 260px;
+    }
+
+    .imageCaption {
+        width: calc(100% - 10px);
+    }
+
+    .projectTitleText {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 50px);
+    }
+
+    .projectTitleText > h4 {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: calc(100% - 50px);
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .projectTitleText > p {
+        margin-top: 5px;
+        margin-left: 35px;
+    }
+
+    .projectLinkText {
+        grid-template-columns: 230px 230px;
+    }
+
+    .projectLinkText > a {
+        left: 0px;
+        width: 280px;
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        height: 80px;
+    }
+
+    nav > h3 {
+        font-size: 30px;
+    }
+
+    .navOptions > li {
+        margin-left: 25px;
+    }
+
+    /*home page*/
+    .homeIntro {
+        font-size: 23px;
+        width: 400px;
+        height: 620px;
+        margin-bottom: -80px;
+    }
+
+    .homeIntro > p {
+        line-height: 42px;
+    }
+
+    .homeWorks {
+        margin-top: 80px;
+    }
+
+    .works {
+        padding: 80px 30px 30px 30px;
+    }
+
+    .filter {
+        height: 250px;
+        width: 350px;
+    }
+
+    .noFilter {
+        height: 250px;
+        width: 350px;
+    }
+
+    .works > div > a > h2 {
+        width: 350px;
+        font-size: 28px;
+
+    }
+
+    .works > div > a > h6 {
+        width: 280px;
+        font-size: 18px;
+    }
+
+    /*about*/
+    .aboutTop > p {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .aboutImage {
+        height: auto;
+        width: 360px;
+    }
+
+    /*project*/
+    .projectAll {
+        margin-top: 80px;
+    }
+
+    .projectDetails {
+        width: 100%;
+    }
+
+    .projectHeader {
+        height: auto;
+        align-items: flex-end;
+    }
+
+    .projectHeader > h1 {
+        font-size: 30px;
+        width: 320px;
+    }
+
+    .projectHeader > h2 {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .projectFinal > iframe {
+        width: 365px;
+        height: 280px;
+    }
+
+    .projectFinal > img {
+        height: auto;
+        width: 365px;
+    }
+
+    .projectOneLiner > p {
+        left: 30px;
+    }
+
+    .projectImageVertical {
+        height: 270px;
+    }
+
+    .projectImageHorizontal {
+        width: 300px;
+    }
+
+    .projectImageSingle {
+        height: auto;
+        width: 365px;
+    }
+    
+    .projectIframeSingle {
+        width: 365px;
+        height: 280px;
+    }
+
+    .projectIframeHorizontal {
+        width: 280px;
+        height: 200px;
+    }
+
+    .projectImageFlexColumn550 {
+        flex-direction: column;
+    }
+
+    .projectImageFlexWrap550 {
+        flex-wrap: wrap;
+    }
+
+    .projectTitleText > h4 {
+        left: 10px;
+        width: 300px;
+    }
+
+    .projectLinkText {
+        position: relative;
+        left: -60px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    nav > h3 {
+        font-size: 35px;
+        width: 200px;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+        height: 200px;
+    }
+
+    footer > h5 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .footerOptions {
+        text-align: center;
+        height: 110px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .footerOptions > li {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    /*home page*/
+    .homeIntro {
+        font-size: 23px;
+        width: 340px;
+        height: 640px;
+    }
+
+    .homeIntro > p {
+        margin-top: 0px;
+        line-height: 40px;
+    }
+
+    .works {
+        padding: 80px 20px 30px 20px;
+    }
+
+    .filter {
+        height: 225px;
+        width: 315px;
+    }
+
+    .noFilter {
+        height: 225px;
+        width: 315px;
+    }
+
+    .works > div > a > h2 {
+        width: 300px;
+        font-size: 25px;
+
+    }
+
+    .works > div > a > h6 {
+        width: 250px;
+        font-size: 15px;
+    }
+
+    /*about*/
+    .aboutHeaderLink {
+        margin-bottom: 10px;
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    .aboutTop > p {
+        margin-top: 20px;
+    }
+
+    .aboutImage {
+        width: 320px;
+    }
+
+    .aboutBottom {
+        left: 0px;
+    }
+
+    /*project*/
+    .projectHeader {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    .projectHeader > h1 {
+        font-size: 30px;
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    .projectHeader > h2 {
+        text-align: left;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    .projectFinal > iframe {
+        width: 320px;
+        height: 240px;
+        margin-right: 2px;
+    }
+
+    .projectFinal > img {
+        height: auto;
+        width: 320px;
+    }
+
+    .projectOneLiner {
+        display: inline;
+    }
+
+    .projectOneLiner > p {
+        width: 260px;
+        line-height: 25px;
+    }
+
+    .projectImageVertical {
+        height: 270px;
+    }
+
+    .projectImageHorizontal {
+        width: 300px;
+    }
+
+    .projectImageSingle {
+        height: auto;
+        width: 320px;
+    }
+    
+    .projectIframeSingle {
+        width: 320px;
+        height: 240px;
+        margin-right: 2px;
+    }
+
+    .projectIframeHorizontal {
+        width: 280px;
+        height: 200px;
+    }
+
+    .aloneScreens {
+        height: 260px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .cherryCards {
+        height: 220px;
+    }
+
+    .projectTitleText {
+        position: relative;
+        left: -10px;
+    }
+
+    .projectTitleText > h4 {
+        width: 280px;
+    }
+
+    .projectTitleText > p {
+        width: calc(100% - 10px);
+    }
+
+    .projectLinkText {
+        left: -20px;
+        width: 280px;
+    }
+
+    .projectLinkText > a {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    nav > h3 {
+        font-size: 32px;
+        width: 240px;
+    }
+
+    .navOptions > li {
+        margin-left: 18px;
+        font-size: 19px;
+    }
+
+    /*home page*/
+    .homeIntro {
+        font-size: 23px;
+        width: 300px;
+        height: 610px;
+        left: 5px;
+    }
+
+    .homeIntro > p {
+        line-height: 33px;
+        font-size: 22px;
+    }
+
+    .homeArrows {
+        top: 25px;
+    }
+
+    .homeArrows > a > img {
+        width: 35px;
+    }
+
+    .works {
+        padding: 60px 9px 20px 9px;
+    }
+
+    .filter {
+        height: 200px;
+        width: 280px;
+    }
+
+    .noFilter {
+        height: 200px;
+        width: 280px;
+    }
+
+    .works > div > a > h2 {
+        width: 270px;
+        font-size: 25px;
+
+    }
+
+    .works > div > a > h6 {
+        width: 230px;
+        font-size: 15px;
+    }
+
+    /*about*/
+    .aboutImage {
+        width: 265px;
+    }
+
+    /*project*/
+    .projectFinal > iframe {
+        width: 270px;
+        height: 200px;
+        margin-right: 2px;
+    }
+
+    .projectFinal > img {
+        height: auto;
+        width: 270px;
+        margin-right: 2px;
+    }
+
+    .projectOneLiner > p {
+        width: 220px;
+    }
+
+    .projectImageVertical {
+        height: 270px;
+    }
+
+    .projectImageHorizontal {
+        margin-right: 2px;
+        width: 270px;
+    }
+
+    .projectImageSingle {
+        height: auto;
+        width: 270px;
+    }
+    
+    .projectIframeSingle {
+        width: 270px;
+        height: 200px;
+        margin-right: 2px;
+    }
+
+    .projectIframeHorizontal {
+        width: 270px;
+        height: 200px;
+    }
+
+    .aloneScreens {
+        height: 250px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .projectTitleText {
+        position: relative;
+        left: -20px;
+    }
+
+    .projectTitleText > h4 {
+        width: 260px;
+    }
+
+    .projectLinkText {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav {
+        height: 70px;
+    }
+
+    nav > h3 {
+        font-size: 28px;
+        width: 200px;
+    }
+
+    .navOptions > li {
+        font-size: 18px;
+    }
+
+    /*home page*/
+    .homeIntro {
+        font-size: 23px;
+        width: 290px;
+        height: 635px;
+        left: 0px;
+        margin-bottom: -70px;
+    }
+
+    .homeWorks {
+        margin-top: 70px;
+    }
+
+    .works {
+        padding: 60px 9px 20px 9px;
+    }
+
+    .filter {
+        height: 187.5px;
+        width: 262.5px;
+    }
+
+    .noFilter {
+        height: 187.5px;
+        width: 262.5px;
+    }
+
+    .works > div > a > h2 {
+        width: 250px;
+    }
+
+    .works > div > a > h6 {
+        width: 220px;
+        font-size: 15px;
+    }
+
+    /*about*/
+    .aboutImage {
+        width: 253px;
+    }
+
+    /*project*/
+    .projectAll {
+        margin-top: 70px;
+    }
+
+    .projectFinal > iframe {
+        width: 253px;
+        height: 200px;
+    }
+
+    .projectFinal > img {
+        width: 253px;
+    }
+
+    .projectOneLiner > p {
+        left: 20px;
+    }
+
+    .projectImageVertical {
+        height: 250px;
+    }
+
+    .projectImageHorizontal {
+        width: 253px;
+    }
+
+    .projectImageSingle {
+        height: auto;
+        width: 253px;
+    }
+
+    .projectIframeHorizontal {
+        width: 253px;
+        height: 200px;
+    }
+
+    .aloneScreens {
+        height: 230px;
+    }
+
+    .cherryCards {
+        height: 200px;
+    }
+
+    .projectTitleText > h4 {
+        width: 260px;
+    }
+
+    .projectLinkText {
+        left: -10px;
+        width: 240px;
+    }
+}
